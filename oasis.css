@@ -1,0 +1,250 @@
+/* Font dosyasını ekleme */
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('./assets/fonts/Montserrat-Medium.otf') format('otf');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('./assets/fonts/Montserrat-Bold.otf') format('otf');
+}
+@font-face {
+  font-family: 'Montserrat-MediumItalic';
+  src: url('./assets/fonts/Montserrat-MediumItalic.otf') format('otf');
+}
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  src: url('./assets/fonts/Montserrat-ExtraBold.otf') format('otf');
+}
+@font-face {
+  font-family: 'Montserrat-BoldItalic';
+  src: url('./assets/fonts/Montserrat-BoldItalic.otf') format('otf');
+}
+@font-face {
+  font-family: 'Montserrat-BlackItalic';
+  src: url('./assets/fonts/Montserrat-BoldItalic.otf') format('otf');
+}
+
+/* CSS */
+body {
+  background-color: black;
+}
+
+.card-title {
+  color: white
+}
+
+.navbar-brand.center {
+  position:relative;
+  left: 50%;
+}
+
+.nav-item a {
+  font-size: 18px;
+  color: white;
+}
+
+.nav-item a:hover {
+  color: white;
+}
+
+/* CLASS */
+.font-medium {
+  font-family: 'Montserrat-Medium';
+}
+.font-bold {
+  font-family: 'Montserrat-Bold'
+}
+.font-medium-italic {
+  font-family: 'Montserrat-MediumItalic'
+}
+.font-bold-italic{
+  font-family: 'Montserrat-BoldItalic';
+}
+.font-extra-bold {
+  font-family: 'Montserrat-ExtraBold';
+}
+.font-black-italic {
+  font-family: 'Montserrat-BlackItalic';
+}
+.primary-color {
+  color: #e2eb6d;
+}
+.secondary-color {
+  color: #f2f6ae;
+}
+.border-glowing{
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 35px 0px rgba(145, 145, 133, 0.591);
+}
+
+/* ID */
+#products {
+  margin-top: 64px;
+}
+#products .card {
+  background-color: unset;
+  border: unset;
+}
+#products .card-title {
+  font-size: 97.5px;
+  line-height: 1.0;
+}
+#products button {
+  color: #f2f6ae;
+  background-color: unset;
+  border-color: #f2f6ae;
+  display: inline-block;
+  background: #111;
+  padding: 20px 40px;
+  cursor: pointer;
+  clip-path: polygon(20% 10%, 10% 80%, 90% 70%, 85% 20%);
+  transition: all .5s;
+  font-style: italic;
+}
+#products .card-text {
+  color: white;
+  font-size: 19.5px;
+}
+#spec {
+  margin-top: 64px;
+}
+#spec .card {
+  background-color: #010302;
+  border: 2px solid #0da5c8;
+  border-radius: 30px;
+  position: relative;
+}
+#spec .card-img-top > img {
+  position: absolute;
+  top: -15%;
+  left: 40%
+}
+#spec img{
+  height: 60px;
+  width: auto;
+  border: 2px solid #0da5c8;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: black;
+}
+#spec .card-body{
+  margin-top: 16px;
+}
+#properties {
+  color: white;
+  padding: 0px 64px;
+}
+#properties h1 {
+  font-size: 52.5px;
+  font-family: 'Montserrat-ExtraBold';
+  font-weight: bold;
+}
+#properties div {
+  padding: 10px 250px;
+}
+#properties p {
+  font-size: 30px;
+  font-family: 'Montserrat-Medium';
+}
+#suitcase button {
+  color: #f2f6ae;
+}
+#suitcase button.active {
+  color: black;
+  background-color: unset;
+  border-color: #f2f6ae;
+  display: inline-block;
+  background: #f2f6ae;
+  padding: 20px 40px;
+  cursor: pointer;
+  clip-path: polygon(20% 30%, 10% 75%, 90% 70%, 85% 35%);
+  transition: all .5s;
+  font-size: 18.75px;
+}
+#suitcase span{
+  font-size: 33.75px
+}
+#users {
+  background: url("./assets/images/curves4.png");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: calc(100vw * 983 / 1919); */
+}
+#users h2{
+  color:white; 
+  font-family: 'Montserrat-ExtraBold';
+  font-size: 45px;
+}
+#users .card {
+  background-color: unset;
+  border: unset;
+}
+#users .card-text{
+  color: white;
+  font-size: 14.25px;
+}
+
+#form {
+  background: url("./assets/images/shutterstock.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%;
+  height: calc(100vw * 1344 / 1920);
+}
+
+#form > div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#form > div > div {
+  margin-top: 20%;
+}
+
+#form button {
+  color: black;
+  background-color: unset;
+  border-color: #f2f6ae;
+  display: inline-block;
+  background: #f2f6ae;
+  padding: 20px 40px;
+  cursor: pointer;
+  clip-path: polygon(20% 30%, 10% 75%, 90% 70%, 85% 35%);
+  transition: all .5s;
+  font-size: 18.75px;
+  font-family: 'Montserrat-BoldItalic'
+}
+#form input {
+  background-color: black;
+  border: unset;
+  height: 70px;
+  width: 600px !important;
+  border-radius: 20px !important;
+}
+#form textarea {
+  background-color: black;
+  border: unset;
+  height: 300px;
+  width: 600px !important;
+  border-radius: 20px !important;
+}
+#form label {
+  color: #6d6d6d;
+  margin-left: 30px;
+}
+/* #form h2 {
+  margin-top: 16px;
+}
+#form form {
+  margin-top: 16px;
+} */
+#footer {
+  /* margin-top: calc(100vw * 1344 / 1920);; */
+}
+#footer h5, a, p {
+  color: white;
+}
+
