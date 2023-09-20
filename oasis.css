@@ -85,18 +85,21 @@ body {
 #products .card {
   background-color: unset;
   border: unset;
+  /* padding-top: 25px; */
 }
 #products .card-title {
   font-size: 97.5px;
   line-height: 1.0;
+  margin: 0px 40px 0px 40px;
 }
+
 #products button {
   color: #f2f6ae;
   background-color: unset;
   border-color: #f2f6ae;
   display: inline-block;
   background: #111;
-  padding: 20px 40px;
+  padding: 15px 50px;
   cursor: pointer;
   clip-path: polygon(20% 10%, 10% 80%, 90% 70%, 85% 20%);
   transition: all .5s;
@@ -104,8 +107,9 @@ body {
 }
 #products .card-text {
   color: white;
-  font-size: 19.5px;
+  font-size: 28px;  
 }
+
 #spec {
   margin-top: 64px;
 }
