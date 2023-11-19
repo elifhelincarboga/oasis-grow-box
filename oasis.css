@@ -1,5 +1,5 @@
 /* Font dosyasını ekleme */
-@font-face {
+/* @font-face {
   font-family: 'Montserrat-Medium';
   src: url('./assets/fonts/Montserrat-Medium.otf') format('otf');
 }
@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: 'Montserrat-ExtraBold';
-  src: url('./assets/fonts/Montserrat-ExtraBold.otf') format('otf');
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap") format('otf');
 }
 @font-face {
   font-family: 'Montserrat-BoldItalic';
@@ -21,8 +21,38 @@
 }
 @font-face {
   font-family: 'Montserrat-BlackItalic';
-  src: url('./assets/fonts/Montserrat-BoldItalic.otf') format('otf');
+  src: url('./assets/fonts/Montserrat-BoldItalic.otf') format('otf'); 
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.font-medium {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important;
 }
+
+.font-bold {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.font-mediumItalic {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 500 !important;
+  font-style: italic !important;
+}
+
+.font-boldItalic {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+}
+
+.font-extraBold {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 900 !important;
+}
+
 
 /* CSS */
 body {
@@ -48,7 +78,7 @@ body {
 }
 
 /* CLASS */
-.font-medium {
+/* .font-medium {
   font-family: 'Montserrat-Medium';
 }
 .font-bold {
@@ -65,7 +95,7 @@ body {
 }
 .font-black-italic {
   font-family: 'Montserrat-BlackItalic';
-}
+} */
 .primary-color {
   color: #e2eb6d;
 }
@@ -77,51 +107,78 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 35px 0px rgba(145, 145, 133, 0.591);
 }
+.border-glowing-card{
+  box-shadow: 0 -8px 40px 3px rgba(145, 145, 133, 0.591);
+}
 
 /* ID */
+#starting {
+  background: url("./assets/images/curves4.png");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: calc(100vw * 983 / 1919); */
+}
 #products {
   margin-top: 64px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 #products .card {
   background-color: unset;
   border: unset;
+  /* padding-top: 25px; */
 }
 #products .card-title {
   font-size: 97.5px;
   line-height: 1.0;
+  margin: 0px 40px 0px 40px;
 }
+
 #products button {
   color: #f2f6ae;
   background-color: unset;
   border-color: #f2f6ae;
   display: inline-block;
-  background: #111;
-  padding: 20px 40px;
+  /* background: #111; */
+  padding: 15px 50px;
   cursor: pointer;
   clip-path: polygon(20% 10%, 10% 80%, 90% 70%, 85% 20%);
   transition: all .5s;
-  font-style: italic;
 }
 #products .card-text {
   color: white;
-  font-size: 19.5px;
+  font-size: 28px;  
 }
+
 #spec {
   margin-top: 64px;
 }
 #spec .card {
   background-color: #010302;
-  border: 2px solid #0da5c8;
-  border-radius: 30px;
+  border: double 2px transparent;
   position: relative;
+  border-radius: 30px;
+  background-image: linear-gradient(#010302, #010302), linear-gradient(to top, transparent 10%, #0da5c8 70%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+} 
+#spec .card#moving-card {
+  background-color: #010302;
+  border: double 2px transparent;
+  position: relative;
+  border-radius: 30px;
+  background-image: linear-gradient(#010302, #010302), linear-gradient(to top, transparent 33%, #0da5c8 70%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 #spec .card-img-top > img {
   position: absolute;
-  top: -15%;
-  left: 40%
+  top: -20%;
+  left: 35%
 }
 #spec img{
-  height: 60px;
+  height: 75px;
   width: auto;
   border: 2px solid #0da5c8;
   border-radius: 50%;
@@ -129,11 +186,10 @@ body {
   background-color: black;
 }
 #spec .card-body{
-  margin-top: 16px;
+  margin-top: 32px;
 }
 #properties {
   color: white;
-  padding: 0px 64px;
 }
 #properties h1 {
   font-size: 52.5px;
@@ -144,8 +200,7 @@ body {
   padding: 10px 250px;
 }
 #properties p {
-  font-size: 30px;
-  font-family: 'Montserrat-Medium';
+  font-size: 25px;
 }
 #suitcase button {
   color: #f2f6ae;
@@ -241,9 +296,9 @@ body {
 #form form {
   margin-top: 16px;
 } */
-#footer {
-  /* margin-top: calc(100vw * 1344 / 1920);; */
-}
+/* #footer {
+  margin-top: calc(100vw * 1344 / 1920);;
+} */
 #footer h5, a, p {
   color: white;
 }
